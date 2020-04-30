@@ -1,0 +1,24 @@
+GET http://localhost:5000/api/tags HTTP/1.1
+###
+
+GET http://localhost:5000/api/tags/15 HTTP/1.1
+
+###
+POST http://localhost:5000/api/tags/
+Content-Type: application/json
+
+{
+    "text": "Nueva tarea",
+    "color": "#f7f8f9"
+}
+
+###
+PATCH http://localhost:5000/api/tags/5ea8db7a238804176c5b3d5d
+Content-Type: application/json
+
+{
+    "text": "Nuevo texto",
+    "color": "#000000"
+}
+###
+DELETE http://localhost:5000/api/tags/5ea8db7a238804176c5b3d5d

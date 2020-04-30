@@ -1,0 +1,56 @@
+Arguments: 
+  /snap/node/2635/bin/node /snap/node/2635/bin/yarn.js config get npmRegistryServer
+
+PATH: 
+  /home/fiorellaeffio/Documents/fioredev/valiu-test/node_modules/.bin:/home/fiorellaeffio/Documents/fioredev/node_modules/.bin:/home/fiorellaeffio/Documents/node_modules/.bin:/home/fiorellaeffio/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  13.13.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, write
+      at writeSync (fs.js:692:3)
+      at SyncWriteStream._write (internal/fs/sync_write_stream.js:24:3)
+      at doWrite (_stream_writable.js:392:12)
+      at writeOrBuffer (_stream_writable.js:374:5)
+      at SyncWriteStream.Writable.write (_stream_writable.js:314:12)
+      at ConsoleReporter._log (/snap/node/2635/lib/cli.js:96769:17)
+      at ConsoleReporter.log (/snap/node/2635/lib/cli.js:96757:10)
+      at get (/snap/node/2635/lib/cli.js:87535:14)
+      at Object.<anonymous> (/snap/node/2635/lib/cli.js:25940:25)
+      at Generator.next (<anonymous>)
+
+npm manifest: 
+  {
+    "name": "valiu-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "node server/index.js",
+      "dev": "nodemon server/index.js"
+    },
+    "author": "Fiorella Effio",
+    "license": "ISC",
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "mongodb": "^3.5.6"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
